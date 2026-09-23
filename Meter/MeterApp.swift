@@ -16,18 +16,18 @@ struct MeterApp: App {
 final class MeterAppDelegate: NSObject, NSApplicationDelegate {
     private let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
     private let reader = NetworkInterfaceReader()
+    private let state = MeterState()
+    private let popover = NSPopover()
     private var calculator = TrafficRateCalculator()
     private var timer: Timer?
 
     func applicationDidFinishLaunching(_ notification: Notification) {
         updateTitle(with: .zero)
-        let menu = NSMenu()
-        menu.addItem(NSMenuItem(title: "Meter", action: nil, keyEquivalent: ""))
-        menu.addItem(.separator())
-        let quit = NSMenuItem(title: "Quit Meter", action: #selector(quitApp), keyEquivalent: "q")
-        quit.target = self
-        menu.addItem(quit)
-        statusItem.menu = menu
+        popover.behavior = .transient
+        popover.animates = true
+        popover.contentViewController = NSHostingController(rootView: MeterPopoverView(state: state))
+        statusItem.button?.target = self
+        statusItem.button?.action = #selector(togglePopover)
 
         sample()
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [weak self] _ in
@@ -43,10 +43,14 @@ final class MeterAppDelegate: NSObject, NSApplicationDelegate {
     private func sample() {
         guard let snapshot = reader.snapshot() else {
             calculator.reset()
+            state.interfaceName = nil
+            state.rate = .zero
             updateTitle(with: .zero)
             return
         }
-        updateTitle(with: calculator.calculate(snapshot) ?? .zero)
+        state.interfaceName = snapshot.interfaceName
+        state.rate = calculator.calculate(snapshot) ?? .zero
+        updateTitle(with: state.rate)
     }
 
     private func updateTitle(with rate: TrafficRate) {
@@ -55,7 +59,13 @@ final class MeterAppDelegate: NSObject, NSApplicationDelegate {
         statusItem.button?.toolTip = "Live traffic on the active network interface"
     }
 
-    @objc private func quitApp() {
-        NSApp.terminate(nil)
+    @objc private func togglePopover() {
+        guard let button = statusItem.button else { return }
+        if popover.isShown {
+            popover.performClose(nil)
+        } else {
+            popover.show(relativeTo: button.bounds, of: button, preferredEdge: .minY)
+            NSApp.activate()
+        }
     }
 }
