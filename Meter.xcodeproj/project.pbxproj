@@ -10,7 +10,9 @@
 		14D04853C92DD39C53023E6E /* MeterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB3E5D93EFC25917B55262F /* MeterApp.swift */; };
 		2B1986347BFF17919CB9BEBA /* NetworkInterfaceReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04C0C80A6162360A3A07E1A /* NetworkInterfaceReader.swift */; };
 		3F105AE3F893E82A34394424 /* TrafficRateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48689DF2A9BB740254F4725 /* TrafficRateTests.swift */; };
+		84C96BE4BECA6230CCCEBFCF /* MeterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B916D63493376A001A17328 /* MeterState.swift */; };
 		A78855E0ECB273282CB3F238 /* TrafficRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA65F07E32B0D7AA86EFCB /* TrafficRate.swift */; };
+		D8E3D1811A9752AC68582D09 /* MeterPopoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68DA37D103E5C108A72FEED8 /* MeterPopoverView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,7 +27,9 @@
 
 /* Begin PBXFileReference section */
 		20DA65F07E32B0D7AA86EFCB /* TrafficRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficRate.swift; sourceTree = "<group>"; };
+		68DA37D103E5C108A72FEED8 /* MeterPopoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeterPopoverView.swift; sourceTree = "<group>"; };
 		7744BD3B367383BC791FD38A /* Meter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B916D63493376A001A17328 /* MeterState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeterState.swift; sourceTree = "<group>"; };
 		A48689DF2A9BB740254F4725 /* TrafficRateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficRateTests.swift; sourceTree = "<group>"; };
 		B04C0C80A6162360A3A07E1A /* NetworkInterfaceReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterfaceReader.swift; sourceTree = "<group>"; };
 		BE579BEA641FA6B2B495C9CB /* MeterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				CBB3E5D93EFC25917B55262F /* MeterApp.swift */,
+				68DA37D103E5C108A72FEED8 /* MeterPopoverView.swift */,
+				7B916D63493376A001A17328 /* MeterState.swift */,
 				B04C0C80A6162360A3A07E1A /* NetworkInterfaceReader.swift */,
 				20DA65F07E32B0D7AA86EFCB /* TrafficRate.swift */,
 			);
@@ -144,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				14D04853C92DD39C53023E6E /* MeterApp.swift in Sources */,
+				D8E3D1811A9752AC68582D09 /* MeterPopoverView.swift in Sources */,
+				84C96BE4BECA6230CCCEBFCF /* MeterState.swift in Sources */,
 				2B1986347BFF17919CB9BEBA /* NetworkInterfaceReader.swift in Sources */,
 				A78855E0ECB273282CB3F238 /* TrafficRate.swift in Sources */,
 			);
