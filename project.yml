@@ -1,0 +1,39 @@
+name: Meter
+options:
+  bundleIdPrefix: com.sama1a
+  deploymentTarget:
+    macOS: "26.0"
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    CODE_SIGNING_ALLOWED: NO
+targets:
+  Meter:
+    type: application
+    platform: macOS
+    sources: [Meter]
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.sama1a.Meter
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_LSUIElement: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Meter
+        MARKETING_VERSION: 1.0.0
+        CURRENT_PROJECT_VERSION: 1
+  MeterTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources: [MeterTests]
+    dependencies:
+      - target: Meter
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+schemes:
+  Meter:
+    build:
+      targets:
+        Meter: all
+        MeterTests: [test]
+    test:
+      targets: [MeterTests]

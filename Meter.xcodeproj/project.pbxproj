@@ -1,0 +1,397 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14D04853C92DD39C53023E6E /* MeterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB3E5D93EFC25917B55262F /* MeterApp.swift */; };
+		2B1986347BFF17919CB9BEBA /* NetworkInterfaceReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04C0C80A6162360A3A07E1A /* NetworkInterfaceReader.swift */; };
+		3F105AE3F893E82A34394424 /* TrafficRateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48689DF2A9BB740254F4725 /* TrafficRateTests.swift */; };
+		A78855E0ECB273282CB3F238 /* TrafficRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20DA65F07E32B0D7AA86EFCB /* TrafficRate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF7455BABF5E1AB821004586 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8E7FA2FBF105468280A28EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B624E3103DAA7E302DC2F0CD;
+			remoteInfo = Meter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20DA65F07E32B0D7AA86EFCB /* TrafficRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficRate.swift; sourceTree = "<group>"; };
+		7744BD3B367383BC791FD38A /* Meter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Meter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A48689DF2A9BB740254F4725 /* TrafficRateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficRateTests.swift; sourceTree = "<group>"; };
+		B04C0C80A6162360A3A07E1A /* NetworkInterfaceReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkInterfaceReader.swift; sourceTree = "<group>"; };
+		BE579BEA641FA6B2B495C9CB /* MeterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB3E5D93EFC25917B55262F /* MeterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeterApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		5DE426B40BBFBAA2BE3F7CFB = {
+			isa = PBXGroup;
+			children = (
+				FB839A24C81256CD38C98D70 /* Meter */,
+				EA33744BE15B981E6B6418C0 /* MeterTests */,
+				83A507D6AD8458C8F48E8801 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		83A507D6AD8458C8F48E8801 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7744BD3B367383BC791FD38A /* Meter.app */,
+				BE579BEA641FA6B2B495C9CB /* MeterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA33744BE15B981E6B6418C0 /* MeterTests */ = {
+			isa = PBXGroup;
+			children = (
+				A48689DF2A9BB740254F4725 /* TrafficRateTests.swift */,
+			);
+			path = MeterTests;
+			sourceTree = "<group>";
+		};
+		FB839A24C81256CD38C98D70 /* Meter */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3E5D93EFC25917B55262F /* MeterApp.swift */,
+				B04C0C80A6162360A3A07E1A /* NetworkInterfaceReader.swift */,
+				20DA65F07E32B0D7AA86EFCB /* TrafficRate.swift */,
+			);
+			path = Meter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AAD9124BAC9B1CEA6031A294 /* MeterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8C97E8EB9CBCEC57C9F19929 /* Build configuration list for PBXNativeTarget "MeterTests" */;
+			buildPhases = (
+				D1C0446D250BADDFC59DB982 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DCB22E966D29D38C24079A0F /* PBXTargetDependency */,
+			);
+			name = MeterTests;
+			packageProductDependencies = (
+			);
+			productName = MeterTests;
+			productReference = BE579BEA641FA6B2B495C9CB /* MeterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B624E3103DAA7E302DC2F0CD /* Meter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3E1D293F757B9DAC0981D86 /* Build configuration list for PBXNativeTarget "Meter" */;
+			buildPhases = (
+				5313AD845D51E5677E3C5DCC /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Meter;
+			packageProductDependencies = (
+			);
+			productName = Meter;
+			productReference = 7744BD3B367383BC791FD38A /* Meter.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F8E7FA2FBF105468280A28EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+				};
+			};
+			buildConfigurationList = 60694C2ABCC45452EE712CBD /* Build configuration list for PBXProject "Meter" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 5DE426B40BBFBAA2BE3F7CFB;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 83A507D6AD8458C8F48E8801 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B624E3103DAA7E302DC2F0CD /* Meter */,
+				AAD9124BAC9B1CEA6031A294 /* MeterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5313AD845D51E5677E3C5DCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14D04853C92DD39C53023E6E /* MeterApp.swift in Sources */,
+				2B1986347BFF17919CB9BEBA /* NetworkInterfaceReader.swift in Sources */,
+				A78855E0ECB273282CB3F238 /* TrafficRate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1C0446D250BADDFC59DB982 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F105AE3F893E82A34394424 /* TrafficRateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DCB22E966D29D38C24079A0F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B624E3103DAA7E302DC2F0CD /* Meter */;
+			targetProxy = EF7455BABF5E1AB821004586 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		19A795FBAC8495A17646427C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sama1a.MeterTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meter.app/Contents/MacOS/Meter";
+			};
+			name = Release;
+		};
+		470EE7CF3E98BCF9F54ACDD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		523E6963116653086FED9B2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Meter;
+				INFOPLIST_KEY_LSUIElement = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sama1a.Meter;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		ACC0DBAE5D8F39DF6AE96122 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.sama1a.MeterTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Meter.app/Contents/MacOS/Meter";
+			};
+			name = Debug;
+		};
+		C23C6350B57BA4D29D880659 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		D80D1A2EF84823E5EEC0ADE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Meter;
+				INFOPLIST_KEY_LSUIElement = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sama1a.Meter;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60694C2ABCC45452EE712CBD /* Build configuration list for PBXProject "Meter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				470EE7CF3E98BCF9F54ACDD9 /* Debug */,
+				C23C6350B57BA4D29D880659 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8C97E8EB9CBCEC57C9F19929 /* Build configuration list for PBXNativeTarget "MeterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ACC0DBAE5D8F39DF6AE96122 /* Debug */,
+				19A795FBAC8495A17646427C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E3E1D293F757B9DAC0981D86 /* Build configuration list for PBXNativeTarget "Meter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				523E6963116653086FED9B2B /* Debug */,
+				D80D1A2EF84823E5EEC0ADE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F8E7FA2FBF105468280A28EB /* Project object */;
+}
