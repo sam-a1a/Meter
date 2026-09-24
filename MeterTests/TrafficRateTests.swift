@@ -23,6 +23,9 @@ final class TrafficRateTests: XCTestCase {
         XCTAssertEqual(RateFormatter.string(bytesPerSecond: 0), "0.0 KB/s")
         XCTAssertEqual(RateFormatter.string(bytesPerSecond: 12_500), "12 KB/s")
         XCTAssertEqual(RateFormatter.string(bytesPerSecond: 1_500_000), "1.5 MB/s")
+        XCTAssertEqual(RateFormatter.menuBarString(bytesPerSecond: 0), "0.0K")
+        XCTAssertEqual(RateFormatter.menuBarString(bytesPerSecond: 12_500), "12K")
+        XCTAssertEqual(RateFormatter.menuBarString(bytesPerSecond: 1_500_000), "1.5M")
     }
 
     private func snapshot(_ name: String, received: UInt64, sent: UInt64, time: TimeInterval) -> TrafficSnapshot {

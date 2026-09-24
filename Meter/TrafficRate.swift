@@ -40,6 +40,26 @@ struct TrafficRateCalculator {
 }
 
 enum RateFormatter {
+    static func menuBarString(bytesPerSecond: Double) -> String {
+        let value = max(0, bytesPerSecond)
+        let scaled: Double
+        let unit: String
+
+        switch value {
+        case 1_000_000_000...:
+            scaled = value / 1_000_000_000
+            unit = "G"
+        case 1_000_000...:
+            scaled = value / 1_000_000
+            unit = "M"
+        default:
+            scaled = value / 1_000
+            unit = "K"
+        }
+
+        return String(format: scaled < 10 ? "%.1f%@" : "%.0f%@", scaled, unit)
+    }
+
     static func string(bytesPerSecond: Double) -> String {
         let value = max(0, bytesPerSecond)
         let unit: String
