@@ -20,8 +20,9 @@ app_path="build/DerivedData/Build/Products/Release/Meter.app"
 codesign --force --deep --sign - "$app_path"
 codesign --verify --deep --strict "$app_path"
 
-archive_path="dist/Meter-v1.0.0-macos.zip"
-image_path="dist/Meter-v1.0.0-macos.dmg"
+version=$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' "$app_path/Contents/Info.plist")
+archive_path="dist/Meter-v${version}-macos.zip"
+image_path="dist/Meter-v${version}-macos.dmg"
 staging_path="dist/dmg-staging"
 rm -f "$archive_path" "$image_path" dist/SHA256SUMS.txt
 ditto -c -k --sequesterRsrc --keepParent "$app_path" "$archive_path"

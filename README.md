@@ -11,7 +11,7 @@ Meter is a small native macOS menu bar app that shows your Mac's current downloa
 - Optional launch at login.
 - No account, network request, or special macOS permission is required.
 
-Rates use decimal units: `1 KB/s = 1,000 bytes/s`, `1 MB/s = 1,000 KB/s`. Meter shows traffic handled by the active interface, which may include local network traffic. VPNs can change which interface macOS reports as primary.
+Rates use decimal units: `1 KB/s = 1,000 bytes/s`, `1 MB/s = 1,000 KB/s`. The compact menu bar display abbreviates KB/s, MB/s, and GB/s as K, M, and G. Meter shows traffic handled by the active interface, which may include local network traffic. VPNs can change which interface macOS reports as primary.
 
 ## Requirements
 
@@ -20,7 +20,7 @@ Rates use decimal units: `1 KB/s = 1,000 bytes/s`, `1 MB/s = 1,000 KB/s`. Meter 
 
 ## Install
 
-Download `Meter-v1.0.0-macos.dmg` from [Releases](https://github.com/sam-a1a/Meter/releases), open it, and drag `Meter.app` to Applications. A zip archive is also available. Open the app; its rates appear in the menu bar near the clock and Wi-Fi controls. Click the rates for details and preferences.
+Download the latest Meter DMG from [Releases](https://github.com/sam-a1a/Meter/releases), open it, and drag `Meter.app` to Applications. A zip archive is also available. Open the app; its rates appear in the menu bar near the clock and Wi-Fi controls. Click the rates for a compact details panel. Meter also opens a small details window on first launch and whenever you open it again while it is running; closing that window leaves the menu bar meter active.
 
 The downloadable build is ad hoc signed and **not notarized** because this project does not have an Apple Developer ID certificate. macOS may block a downloaded copy. Building locally in Xcode is the most reliable installation path until a notarized release is available.
 
